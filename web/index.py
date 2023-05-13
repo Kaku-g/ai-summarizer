@@ -4,10 +4,15 @@ import pdfkit
 from transformers import pipeline
 from PyPDF2 import PdfReader, PdfWriter
 import aspose.words as aw
+from fpdf import FPDF
+import os
+
+from dotenv import load_dotenv
+load_dotenv()
 
 
 app = Flask(__name__, template_folder='template')
-app.secret_key = 'your_secret_key'
+app.secret_key = os.getenv("SECRET")
 
 @app.route('/')
 def home():
@@ -54,22 +59,53 @@ def generate_pdf():
     test1=""" """
     for i in final_summary:
         test1+=i[0]['summary_text']+"\n"
+
+    test1 = test1.encode('latin-1', 'replace').decode('latin-1')    
+
     
 
     file_name= pdf_File.filename.split('.')[0]+'summary.txt'
     text_file=open( file_name,"w")
     n=text_file.write(test1)
     text_file.close()
-    str
+
+
+    # Set the maximum number of characters per line
+    max_chars_per_line = 100
+    
+# Open the input and output files
+    with open(file_name, 'r') as input_file, open('conv'+file_name, 'w') as output_file:
+    # Read each line from the input file
+     for line in input_file:
+        # Split the line into chunks of the desired length
+        chunks = [line[i:i+max_chars_per_line] for i in range(0, len(line), max_chars_per_line)]
+        # Write each chunk to the output file as a separate line
+        for chunk in chunks:
+            output_file.write(chunk + '\n')
+    output_file.close()
+    os.remove(file_name)
+
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font("Arial", size=12)
+
+
+    f=open('conv'+file_name,"r")
+    for x in f:
+        pdf.cell(200,10,txt=x,ln=1,align='L')
+
+
+    pdf.output(pdf_File.filename.split('.')[0]+'summary.pdf')    
     # Convert the PDF file to HTML using pdfkit
    # input_html = pdfkit.from_file(input_pdf, False)
     
     # Insert your own processing logic here to modify the HTML as needed
     
+
     # Convert the HTML back to PDF using pdfkit
+    pdf_name=pdf_File.filename.split('.')[0]+'summary.pdf'
 
-
-    output_pdf = file_name
+    output_pdf = pdf_name
     
     # Return the output PDF as a download attachment
     return send_file(output_pdf,  as_attachment=True)

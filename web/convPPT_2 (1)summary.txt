@@ -1,0 +1,21 @@
+ Abhishek Tevatia Department of Mechanical Enginee
+ring Netaji Subhas University of Technology Room N
+o.: 137/VI Email: abhisheke.tevatia@nsut.ac.in2 Th
+e Product Cycle in a Conventional Manufacturing En
+vironment 4 The influence of Computer used in Manu
+facturing Environment 5 The common database as Lin
+kage to the various Computerized Application 6Prod
+uction Activity Production activity can be divided
+ into four main categories: Continuous Flow Proces
+s Mass Production Batch Production Job Shop Produc
+tion .
+
+the turret lathe section operates 10shift/wk.the n
+umber ofhours pershift average 8.0.Average product
+ion rate ofeach machine is17Unit/hr . MTBF indicat
+es the average length of time the piece of equipme
+nt runs between break downs . MLT = n o(Tsu+ QT c+
+ Tno) MLT is manufacturing lead time (min) nonumbe
+r of operations (machines) Tcis the operation cycl
+e time (hr
+

@@ -1,0 +1,178 @@
+ microfabrication techniques have roots in the sta
+ndard fabrication methods developed for the semico
+nductor industry [8. 1?3] . some of these techniqu
+es are common between the micro/nano and very larg
+e-scale integration ( VLSI ) microchip fabrication
+ disciplines . lithography is the technique used t
+o transfer a computer-generated pattern onto a sub
+strate (silicon, glass, GaAs, etc.) this pattern i
+s then used to etch an underlying thin film (oxide
+, nitride, etc
+
+silicon s ubstrate spin photoresist Soft bake Alig
+n the mask Expose the wafer Develop the resist Har
+d bake End of litho graphy Fig. 8.1 Lithography pr
+ocess flow Part A 8.1Basic Microfabrication Techni
+ques 233 1. Contact 2. Proximity 3. Projection Alt
+hough contact printing gives better resolution com
+- pared with the proximity technique, the constant
+ contact of the mask with the photoreasist reduces
+ the process yield and can damage the
+
+silicon oxidation is a process used to obtain a th
+in film of SiO 2 with excellent quality (very low 
+density of defects) and thickness homogeneity . a 
+layer of about 20  (native oxide) is enough to pas
+sivate the surface and prevent further oxydation .
+ the process is typically carried out at temperatu
+res in the range of 900?1200C in the pres- ence of
+ O 2(dry oxyation) or H 2O + carrier gas .
+
+the introduction of certain impurities in a semico
+n- ductor can change its electrical, chemical, and
+ even mechanical properties . in micro-/nanofabric
+ation technologies doping has additional applicati
+ons such as the forma-tion of piezoresistors for m
+echanical transducers or the creation of etch stop
+-layers . ion implantation allows more precise con
+trol of the dose and the impurity profile (the con
+centration versus depth) .
+
+the most common CVD processes in mi- crofabricatio
+n are low-pressure CVD ( LPCVD )a n d plasma-enhan
+ced ( PECVD) large numbers of wafers can be proces
+sed simultaneously and the ma- terial is deposited
+ on both sides . the process temperature depends o
+n the material to be de- posited, but generally is
+ in the range 550?900C . as in oxidation, high tem
+peratures and contamination is- sues
+
+silicon-on-sapphire substrates and some het- erost
+ructures are fabricated in this way . most common 
+in microfabrication is the growth of silicon on an
+other silicon substrate . the most common for sili
+con is thermal chemical vapor deposition or vapor-
+phase epitaxy ( VPE ). the latter typically uses m
+olecular beams from thermally evap-orated elementa
+l sources aiming at the substrate in an ultrahigh-
+vacuum chamber .
+
+inert ions bombarding the target are produced in d
+irect-current (DC)o r RF plasma . evaporation and 
+sputtering systems are often able to deposit more 
+than one material simultane- ously or sequentially
+ . tension in evaporated or sputtered layers is ty
+pically tensile . thickness beyond 2 m is rarely d
+eposited with these processes . electrodeposition 
+is a process typi- cally used to obtain thick meta
+l structures .
+
+Pulsed laser and atomic layer deposition have attr
+acted a considerable amount of attention re- centl
+y . these two techniques offer several unique adva
+ntages compared with other thin-film deposition . 
+a typical PLD deposition setup method that is part
+icularly useful for next-generation nanoscale devi
+ce fabrication . the main advantages of the PLD ar
+e its simplicity and ability to deposit complex ma
+terials with preserved stoichiometry . other depos
+ited materials include transition metals (Cu, Co, 
+Fe, and Ni), metal oxide
+
+wet etching and silicon nitride are the most commo
+n masking ma- terials for the wet oxide etch . sil
+icon dioxide is commonly etched in dilute (140?200
+C) phosphoric acid with sili- con oxide as the mas
+king material . etch rate of 1000  /min in HF ( BH
+F :H F+NH 4F) is not very common in micro/nanofabr
+ication .
+
+Isotropic etching of silicon using HF/HNO 3/CH3COO
+H dates back to the 1950s . the etch mechanism for
+ this combination has been elucidated and is as fo
+llows: HNO 3is used to oxidize the sili- con, whic
+h is then dissolved away in the HF . for short etc
+h times, silicon dioxide can be used as the maskin
+g material; however, one needs to use sili nitride
+ if a longer etch time is
+
+silicon wafer under etch consists of an n-epi regi
+on on a p-type substrate . a reverse-biased p?n ju
+nction (electrochem- ical etch stop) is formed and
+ etching is stopped . one must take into account t
+he finite etch rate of the masking materials . the
+ three basic dry etch techniques are plasma based 
+. they have several advantages when compared with 
+wet etchants .
+
+ion milling is a purely physical process which use
+s accelerated inert ions (e.g., Ar+) striking per-
+ pendicular to the surface to remove the material 
+(p104?103Torr) the main charac- teristics of this 
+technique are very low etch rates (in the order of
+ a few nm /min) and poor selectivity (close to 1:1
+ for most materials); hence it is generally used t
+o etch very thin
+
+silicon-silicon bonding is one of the most importa
+nt fab-rication techniques in microsystem technolo
+gy . silicon?silicon fusion (or silicon direct bon
+ding) and silicon?glass electrostatic (or anodic) 
+bonding are used in micromechanical devices and si
+licon-on-insulator (SOI) substrates . the bonding 
+procedure is as follows: the silicon or oxide-coat
+ed silicon wafers are first thoroughly cleaned (ac
+tivated) in HF .
+
+silicon fusion bonding is another major substrate 
+joining technique . a high-temperature (800?1200C)
+ anneal is usually re- quired . the bond can be ob
+served visu- ally as a dark-grayish front which ex
+pands across the wafer . silicon?silicon anodic bo
+nding using sputtered or evaporated glass interlay
+er is also possible . in eutectic bonding process,
+ gold-coated silicon wafers are bonded
+
+eutectic bonding can be accomplished at low temper
+atures but achieving uniformity over large areas h
+as proven to be challenging . glass frit can also 
+be used as an interlayer in sub- strate bonding . 
+a thin layer of glass is deposited and preglazed a
+nd the sandwich is heated to above the glass melti
+ng temperature . the dimensional spectrum of the m
+icrostructures that can be fabricated using these 
+tech-niques spans from 1 mm to 1 m .
+
+a robot based station can take over precise proces
+sing and assembly tasks . a microassembly station 
+must be able to automatically accomplish the follo
+wing steps with its microrobots . this step can al
+so be automated in a versatile microa . station . 
+the topic "flexible micromanipulation systems" has
+ become of interest, especially for microsystem pr
+oduction . it is a topic of interest for . microsy
+stems, especially in biomedical research and eye a
+nd plastic surgery .
+
+the availability of highly precise assembly proces
+ses will make it easier to realize operable micros
+ystems . micromanipulation is a common practice in
+ medicine and biological research . many microrobo
+ts can be active at the same time in a multifuncti
+onal manipulation desktop station . the use of sev
+eral flexible robots allows the operator to perfor
+m manipulations in different work areas . if the a
+ssem bly tasks are more complex, the robot's comma
+nds are passed along to an input unit .
+
+nanorobot systems carry out the manipulation tasks
+ in close cooperation . the robot size is comparab
+le to that of the manipulated object . in general 
+manipulations vary from an application to another,
+ the following 4 operational sequences are always 
+taking place: grip, transport, position, release, 
+adjust, fix in place and processing steps like cut
+ting, soldering, gluing, removal of impurities, et
+c. the realization of this concept, which is based
+ on human behavior, is in the di stant future.
+
