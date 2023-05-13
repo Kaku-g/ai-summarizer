@@ -1,15 +1,17 @@
 from flask import Flask, request, jsonify, render_template, send_file,flash,redirect
 from io import BytesIO
-import pdfkit
+#import pdfkit
 from transformers import pipeline
 from PyPDF2 import PdfReader, PdfWriter
-import aspose.words as aw
+#import aspose.words as aw
 from fpdf import FPDF
 import os
 
 from dotenv import load_dotenv
 load_dotenv()
 
+env_config = os.getenv("PROD_APP_SETTINGS", "config.DevelopmentConfig")
+app.config.from_object(env_config)
 
 app = Flask(__name__, template_folder='template')
 app.secret_key = os.getenv("SECRET")
